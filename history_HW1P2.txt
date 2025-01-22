@@ -1,0 +1,241 @@
+    1  pwd
+    2  cd /root/Desktop/host
+    3  git init
+    4  echo "(this is a message from local main branch)'>> src_info.txt
+    5  ls
+    6  pwd
+    7  q
+    8  .q
+    9  pwd
+   10  cd /root/Desktop/host
+   11  git init
+   12  git checkout -b main
+   13  echo "hello" >> hello.txt
+   14  git add .
+   15  git commit -m "new commit"
+   16  git config --global user.name admoriartyx
+   17  git config --global user.email amoriarty@ucsb.edu
+   18  git config --global --list
+   19  git commit -m "new commit"
+   20  git remote add origin https://github.com/admoriartyx/admoriartyx129.git
+   21  git push origin main
+   22  git push -u origin main
+   23  echo "(this is a message from local main branch)">> src_info.txt
+   24  ls
+   25  cat src_info.txt
+   26  git add src_info.txt
+   27  git commit -m "Add a message from the local main branch"
+   28  git status
+   29  git log
+   30  git reset HEAD-1
+   31  git reset HEAD~1
+   32  git status
+   33  git log
+   34  git add src_info.txt
+   35  git commit -m "Add a message from the local main branch"
+   36  git push origin main
+   37  git checkout -b feature_branch
+   38  echo "(this is a message from local feature branch)">> src_info.txt
+   39  echo "(this is a message from local feature branch)">> ../test/test_info.txt
+   40  echo "(this is a message from local feature branch to test_info")>> ../test/test_info.txt
+   41  "(this is a message from local feature branch to test_info)">> ../test/test_info.txt
+   42  mkdir test
+   43  cd test
+   44  echo "(this is a message from local feature branch to test_info)">> test_info.txt
+   45  git status
+   46  git add .
+   47  git status
+   48  git add ../test/test_info.txt
+   49  git status
+   50  git commit -m "new branch with two changes"
+   51  git push -u origin feature_branch
+   52  git log
+   53  git checkout main
+   54  git merge feature_branch
+   55  cd ..
+   56  git merge feature_branch
+   57  git status
+   58  git log
+   59  git push origin main
+   60  get fetch origin
+   61  cd /root/Desktop/host
+   62  get fetch origin
+   63  git fetch origin
+   64  cd ..
+   65  git fetch origin
+   66  git /root/Desktop/host
+   67  cd /root/Desktop/host
+   68  git fetch origin
+   69  git status
+   70  git diff main origin/main
+   71  git init
+   72  cd /root/Desktop/host
+   73  git clone https://github.com/admoriartyx/P2.git
+   74  rm /root/Desktop/host/P2/Problem1/*.bin
+   75  nano file_remove.sh
+   76  vi file_remove.sh
+   77  git init
+   78  clone rm /root/Desktop/host/P2/Problem1/*.bin
+   79  clone https://github.com/admoriartyx/P2.git
+   80  git clone https://github.com/admoriartyx/P2.git
+   81  cat << 'EOF' >> file_remove.sh
+   82  alias file_remove='function_file_remove() {
+   83  ls P2
+   84  touch file_remove.sh
+   85  code file_remove.sh
+   86  EOF
+   87  cat << 'EOF' > file_remove.sh
+   88  ls P2
+   89  cat << 'EOF' > file_remove.sh
+   90  alias file_remove='function_file_remove()' {
+   91      if [ -d "$1" ]; then
+   92          echo "Deleting all files in directory: $1"
+   93          rm -v "$1"/*
+   94      else
+   95          echo "Error: Directory $1 does not exist."
+   96      fi
+   97  }; _file_remove        
+   98  }
+   99  EOF
+  100  ls P2
+  101  cat << 'EOF' > file_remove.sh
+  102  > alias file_remove='function_file_remove()' {
+  103  >     if [ -d "$1" ]; then
+  104  >         echo "Deleting all files in directory: $1"
+  105  >         rm -v "$1"/*
+  106  >     else
+  107  >         echo "Error: Directory $1 does not exist."
+  108  >     fi
+  109  > }; _file_remove        
+  110  EOF
+  111  chmod +x file_remove.sh
+  112  source file_remove.sh
+  113  cat << 'EOF' > file_remove.sh
+  114  #!/bin/bash
+  115  # Define an alias called file_remove
+  116  alias file_remove='function _file_remove() {
+  117      if [ -d "$1" ]; then
+  118          echo "Deleting all files in directory: $1"
+  119          rm -v "$1"/*
+  120      else
+  121          echo "Error: Directory $1 does not exist."
+  122      fi
+  123  }; _file_remove'
+  124  EOF
+  125  chmod +x file_remove.sh
+  126  source file_remove.sh
+  127  file_remove /root/Desktop/host/P2/Problem1
+  128  cat << 'EOF' > file_remove.sh
+  129  #!/bin/bash
+  130  > 
+  131  > # Define an alias called file_remove
+  132  > alias file_remove='function _file_remove() {
+  133  >     if [ -d "$1" ]; then
+  134  >         echo "Deleting all files in directory: $1"
+  135  >         rm -v "$1"/*
+  136  >     else
+  137  >         echo "Error: Directory $1 does not exist."
+  138  >     fi
+  139  > }; _file_remove'
+  140  ls P2
+  141  ls Problem1
+  142  ls P2/Problem1
+  143  pwd
+  144  git init
+  145  ls P2
+  146  ls P2/Problem1
+  147  ls
+  148  cd P2
+  149  ls
+  150  git config --global
+  151  git config --global user.name "admoriartyx"
+  152  git config --global user.email "amoriarty@ucsb.edu"
+  153  git config --global
+  154  git config --global list
+  155  git config --list
+  156  git remote add origin https://github.com/admoriartyx/P2.git
+  157  git remote -v
+  158  git init
+  159  echo "test" > test.txt
+  160  ls
+  161  git add .
+  162  git status
+  163  git commit -m "testing connection to remote repo"
+  164  git push origin main
+  165  ls
+  166  rm test.txt
+  167  ls
+  168  cd Problem1
+  169  ls
+  170  rm ./*.bin
+  171  ls
+  172  code func_file_remove.sh
+  173  nano ~/.bashrc
+  174  cd
+  175  cd ..
+  176  ls
+  177  cd ..
+  178  ls
+  179  cd home
+  180  ls
+  181  cd Desktop/
+  182  ls
+  183  ls
+  184  cd /home/ubuntu
+  185  ls
+  186  rm file_remove.sh 
+  187  ls
+  188  cs P2
+  189  cd p2
+  190  cd P2
+  191  ls
+  192  cd Problem1/
+  193  ls
+  194  ls
+  195  code func_file_remove.sh 
+  196  mv func_file_remove.sh file_remove.sh
+  197  ls
+  198  chmod +x file_remove.sh
+  199  source file_remove.sh
+  200  echo "test" > test.bin
+  201  ls
+  202  file_remove Problem1
+  203  cd ..
+  204  file_remove Problem1
+  205  ls Problem1
+  206  cd Problem1/electron_scattering_data
+  207  code file_remove.sh
+  208  cd ..
+  209  ls
+  210  code file_remove.sh 
+  211  code separate_files.sh
+  212  chmod +x separate_files.sh
+  213  chmod +x separate_files.sh
+  214  ./separate_files.sh ./electron_scattering_data
+  215  ls
+  216  cd electron_scattering_data
+  217  ls
+  218  cd even
+  219  ls
+  220  history | tail -n 10000 >> history.txt
+  221  mv history.txt historyHW1P2.txt
+  222  ls
+  223  mv historyHW1P2.txt /P2
+  224  cd ..
+  225  cd ..
+  226  cd ..
+  227  ls
+  228  cd 
+  229  ls
+  230  cd P2
+  231  ls
+  232  cd Problem1/
+  233  ls
+  234  cd electron_scattering_data/
+  235  ls
+  236  cd even/
+  237  ls
+  238  cd ..
+  239  cd ..
+  240  cd ..
+  241  history | tail -n 100000 >> history_HW1P2.txt
